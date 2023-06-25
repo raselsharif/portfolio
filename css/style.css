@@ -10,7 +10,8 @@
 }
 ul, ol{
     list-style-type: none;
-    padding-left: 0;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
 }
 h1,h2,h3,h4,h5,h6,p{
     line-height: 0.8;
@@ -20,6 +21,7 @@ h1,h2,h3,h4,h5,h6{
 }
 p{
     color: var(--praColor);
+    margin-bottom: 0;
 }
 a{
     text-decoration: none;
@@ -111,13 +113,259 @@ a{
 }
 /* ============= banner section start ============= */
 
-/* ================ banner section end ============== */
+/* ================ about section end ============== */
+#about{
+    background: var(--bg);
+}
+.common__headin__title{
+    font-size: 15px;
+    color: var(--praColor);
+}
+.common__heding__head{
+    font-size: 46px;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: -0.25;
+}
+.about__who{
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--primaryC);
+}
+.about__who__details{
+font-size: 30px;
+font-weight: 700;
+line-height: 1.6;
+}
+.about__icon {
+    margin-left: 60px;
+    position: relative;
+}
+.about__icon:after{
+    content: "";
+    position: absolute;
+    left: -85px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 1px;
+    width: 60px;
+    background: var(--praColor);
+}
+.about__details{
+    font-size: 15px;
+    border-bottom: 2px solid rgba(255,255,255,.08);
+    font-weight: 400;
+    line-height: 1.95;
+}
+.about__contact h5{
+    display: inline-block;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.about__contact span{
+    font-size: 15px;
+    color: var(--praColor);
+}
 
-/* ============= banner section start ============= */
+.cv__link{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 10px 35px;
+    border-radius: 30px;
+    font-size: 14px;
+    background-color: #009e66!important;
+    border: 1px solid #009e66!important;
+    color: #fff;
+}
 
-/* ================ banner section end ============== */
+.cv__link:hover, .cv__link:focus{
+    opacity: 0.7;
+}
+.about__card{
+    background-color: #161616;
+    border-bottom: 2px solid transparent;
+    box-shadow: 0 6px 16px rgba(0,0,0,.2);
+    padding: 38px 42px;
+    transition: all .15s ease-in-out;
+}
+.card__logo{
+    color: var(--primaryC);
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+.card__heading {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -.5px;
+    margin-bottom: 14px;
+}
+.card__para {
+    font-size: 14px;
+    font-weight: 400;
+   line-height: 1.95;
+}
+.testi__img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+}
+.testi__img img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+.testi__card{
+    background-color: #161616;
+    padding: 48px 40px;
+    position: relative;
+}
+.testi__card::after{
+    content: '\f10e';
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    color: var(--primaryC);
+    font-size: 50px;
+    font-family: FontAwesome;
+}
+.testi__detail{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 20px;
+}
+.testi__name{
+    color: #efefef;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
 
-/* ============= banner section start ============= */
+.testi__title{
+    color: #888;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.testi__para{
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.95;  
+}
+.plan__card{
+    background-color: #161616;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.05);
+    padding: 50px 0;
+    text-align: center;
+}
+.plan__logo{
+    font-size: 50px;
+    color: var(--primaryC);
+    margin-bottom: 20px;
+}
+.plan__heading{
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.plan__price {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 22px;
+}
+.plan__list{
+    margin-bottom: 20px !important;
+}
+.plan__list__text {
+    color: #9f9f9f;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2.5;
+}
+/* ============= about section start ============= */
+
+/* ================ resume section end ============== */
+#resume{
+    background: var(--bg);
+}
+
+.resume__card {
+    background-color: #161616;
+    border-left: 2px solid var(--primaryC);
+    padding: 32px 48px;
+    position: relative;
+}
+.resume__card::after{
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 0;
+    top: 40px;
+    background: var(--primaryC);
+    border-radius: 0 10px 10px 0;
+}
+.resume__heding__head {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.resume__card__details{
+font-size: 14px;
+line-height: 1.95;
+font-weight: 400;
+margin-bottom: 10px;
+}
+.resume__description{
+font-size: 14px;
+line-height: 1.95;
+font-weight: 400;
+}
+.resume__items:not(:last-child) {
+    border-bottom: 1px solid #313131;
+}
+.skill__main{
+    background: var(--praColor);
+    height: 14px;
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    /* margin-bottom: 40px; */
+}
+.skill__bg{
+    background: var(--primaryC);
+    height: 100%;
+    width: 90%;
+    border-radius: 3px;
+}
+.skill__text{
+    position: absolute;
+    top: -20px;
+    left: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.skill__text p{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+.vskill__footer__heading {
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 13px;
+}
+.skill__footer__para {
+    font-size: 16px;
+    line-height: 2;
+    color: var(--praColor);
+    font-weight: 400;
+}
+/* ============= resume section start ============= */
 
 /* ================ banner section end ============== */
 
