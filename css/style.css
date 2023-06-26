@@ -37,6 +37,7 @@ a{
     width: 100%;
     top: 0;
     left: 0;
+    background: #009e66;
 }
 .navbar-brand{
     color: var(--primaryC);
