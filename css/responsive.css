@@ -2,10 +2,21 @@
 @media (max-width: 576px) {
 
     /* ========== banner section ========= */
+    html,body{
+        overflow-x: hidden;
+    }
     #navbar {
         padding: 0;
     }
-
+    .navbar .navbar-collapse .navbar-nav {
+        background-color: #191919;
+        padding: 8px 20px;
+        position: relative;
+        top: 8px;
+        width: 200px;
+        z-index: 2;
+        text-align: center;
+    }
     #banner {
         background-position: 70%;
         background-repeat: no-repeat;
