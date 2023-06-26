@@ -39,7 +39,7 @@ a{
     width: 100%;
     top: 0;
     left: 0;
-    background: #009e66;
+    background: rgba(0, 0, 0, 0.2);
 }
 .navbar-brand{
     color: var(--primaryC);
@@ -368,17 +368,166 @@ font-weight: 400;
 }
 /* ============= resume section start ============= */
 
-/* ================ banner section end ============== */
+/* ================ portfolio" section end ============== */
+#portfolio{
+    background: var(--bg);
+}
+.list__btn{
+    cursor: pointer;
+}
+.portfolio__img{
+    position: relative;
+    height: 250px;
+}
+.portfolio__img img{
+    height: 100%;
+    object-fit: cover;
+}
+.portfolio__overly{
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.portfolio__img:hover .portfolio__overly{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    opacity: 1;
+}
+.portfolio__link{
+    background: rgba(0, 158, 103, 0.9);
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 400;
+}
+.portfolio__link:hover, .portfolio__link:focus{
+    opacity: 1;
+}
+/* ============= portfolio" section start ============= */
 
-/* ============= banner section start ============= */
+/* ================ blog section end ============== */
+#blog{
+    background: var(--bg);
+}
+.blog__img{
+    position: relative;
+}
+.blog__date{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: var(--primaryC);
+    padding: 10px 15px;
+}
+.blog__date h6{
+  margin-bottom: 0;
+}
+.blog__link {
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: .1px;
+    color: #fff;
+}
+.blog__para {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+/* ============= blog section start ============= */
 
-/* ================ banner section end ============== */
+/* ================ contact section end ============== */
+#contact{
+    background: var(--bg);
+}
+.form input, textarea{
+    border: none !important;
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 var(--primaryC);
+}
+.form input, textarea{
+    background: #161616 !important;
+}
+.form input::placeholder, textarea::placeholder{
+    color: #777 !important;
+}
+.form__btn{
+ outline: none;
+ border: none;
+ padding: 10px 15px;
+ border-radius: 20px;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ -ms-border-radius: 20px;
+ -o-border-radius: 20px;
+ background: var(--primaryC);
+ color: #fff;
+ transition: all linear 0.3s;
+ -webkit-transition: all linear 0.3s;
+ -moz-transition: all linear 0.3s;
+ -ms-transition: all linear 0.3s;
+ -o-transition: all linear 0.3s;
+}
+.form__btn:hover{
+    opacity: 0.8;
+}
+.form__heading {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.form__para{
+    font-size: 14px;
+    line-height: 1.95;
+    font-weight: 400;
+}
 
-/* ============= banner section start ============= */
+.info__detail{
+    border-left: 2px solid rgba(255,255,255,.15);
+    padding: 12px 0 12px 22px;
+    border-left: 1px solid var(--primaryC);
 
-/* ================ banner section end ============== */
-
-/* ============= banner section start ============= */
+}
+.info__logo{
+    font-size: 30px;
+    color: var(--primaryC);
+}
+.info__name{
+    margin-bottom: 15px;
+}
+/* ============= contact section start ============= */
 
 /* ================ banner section end ============== */
 

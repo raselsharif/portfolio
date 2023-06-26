@@ -1,0 +1,30 @@
+/* =========== extra small device =========== */
+@media (max-width: 576px) {
+
+    /* ========== banner section ========= */
+    #navbar {
+        padding: 0;
+    }
+
+    #banner {
+        background-position: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner__main__heading {
+        font-size: 60px;
+        line-height: 1;
+        color: #fff;
+        margin-bottom: 25px !important;
+        padding-top: 0 !important;
+    }
+    .banner__sub__heading {
+        font-size: 25px;
+        padding-bottom: 0 !important;
+        line-height: 1.2;
+    }
+    .banner__link__items {
+        display: none;
+    }
+}
