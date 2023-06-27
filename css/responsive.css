@@ -46,14 +46,10 @@
     }
 
     /* ======== about section ======= */
-    #about,
-    #resume,
-    #portfolio,
-    #blog,
-    #contact {
-
+    #abou {
         padding-top: 0 !important;
     }
+
 
     .about__area {
         padding-top: 0 !important;
@@ -133,6 +129,7 @@
 
 /* =========== small device =========== */
 @media (min-width: 576px) and (max-width:767.98px) {
+
     /* ========== banner section ========= */
     html,
     body {
@@ -178,11 +175,7 @@
     }
 
     /* ======== about section ======= */
-    #about,
-    #resume,
-    #portfolio,
-    #blog,
-    #contact {
+    #about {
 
         padding-top: 0 !important;
     }
@@ -246,7 +239,7 @@
 
     /* =======  resume section ======= */
     .resume__area {
-        padding: 0 10px;
+        /* padding: 0 20px !important; */
     }
 
     .skill__footer__para {
@@ -264,115 +257,116 @@
 }
 
 /* ======== medium device ======== */
-@media (min-width: 768px) and (max-width:991.98px){
- /* ========== banner section ========= */
- html,
- body {
-     overflow-x: hidden;
- }
+@media (min-width: 768px) and (max-width:991.98px) {
 
- #navbar {
-     padding: 0;
- }
+    /* ========== banner section ========= */
+    html,
+    body {
+        overflow-x: hidden;
+    }
 
- #banner {
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
- }
+    #navbar {
+        padding: 0;
+    }
 
- .banner__main__heading {
-     font-size: 60px;
-     line-height: 1;
-     color: #fff;
-     margin-bottom: 25px !important;
-     padding-top: 0 !important;
- }
+    #banner {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
- .banner__sub__heading {
-     font-size: 25px;
-     padding-bottom: 0 !important;
-     line-height: 1.2;
- }
+    .banner__main__heading {
+        font-size: 60px;
+        line-height: 1;
+        color: #fff;
+        margin-bottom: 25px !important;
+        padding-top: 0 !important;
+    }
 
- .banner__link__items {
-     display: none;
- }
+    .banner__sub__heading {
+        font-size: 25px;
+        padding-bottom: 0 !important;
+        line-height: 1.2;
+    }
 
- /* ======== about section ======= */
- #about {
-     padding-top: 0 !important;
- }
+    .banner__link__items {
+        display: none;
+    }
 
- .about__area {
-     padding-top: 0 !important;
-     margin-left: 0 !important;
- }
+    /* ======== about section ======= */
+    #about {
+        padding-top: 0 !important;
+    }
 
- .about__img {
-     text-align: center;
- }
+    .about__area {
+        padding-top: 0 !important;
+        margin-left: 0 !important;
+    }
 
- .about__img img {
-     height: 250px !important;
-     width: 250px !important;
-     border-radius: 50%;
- }
+    .about__img {
+        text-align: center;
+    }
 
- .about__heading__area {
-     margin-top: 30px;
- }
+    .about__img img {
+        height: 250px !important;
+        width: 250px !important;
+        border-radius: 50%;
+    }
 
- .about__who {
-     text-align: center;
- }
+    .about__heading__area {
+        margin-top: 30px;
+    }
 
- .about__who__details {
-     font-size: 25px;
-     font-weight: 600;
-     line-height: 1.4;
-     text-align: center;
- }
+    .about__who {
+        text-align: center;
+    }
 
- .about__cv {
-     margin-bottom: 20px;
- }
+    .about__who__details {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1.4;
+        text-align: center;
+    }
 
- .common__heding__head {
-     font-size: 42px;
- }
+    .about__cv {
+        margin-bottom: 20px;
+    }
 
- .about__card {
-    padding: 20px 25px;
-}
+    .common__heding__head {
+        font-size: 42px;
+    }
 
- .testi__card {
-    padding: 35px 30px;
-}
+    .about__card {
+        padding: 20px 25px;
+    }
 
- .testi__card::after {
-     right: 20px;
-     top: 10px;
-     font-size: 40px;
- }
+    .testi__card {
+        padding: 35px 30px;
+    }
 
- .plan__card {
-     padding: 30px 0;
-     margin-top: 15px;
- }
+    .testi__card::after {
+        right: 20px;
+        top: 10px;
+        font-size: 40px;
+    }
 
- /* =======  resume section ======= */
- .resume__area {
-     padding: 0 10px;
- }
+    .plan__card {
+        padding: 30px 0;
+        margin-top: 15px;
+    }
 
- .skill__footer__para {
-     margin-bottom: 20px;
- }
+    /* =======  resume section ======= */
+    .resume__area {
+        padding: 0 10px;
+    }
 
- /* ======= contact section ====== */
+    .skill__footer__para {
+        margin-bottom: 20px;
+    }
 
- .form__heading {
-     margin-top: 35px;
- }
+    /* ======= contact section ====== */
+
+    .form__heading {
+        margin-top: 35px;
+    }
 }
