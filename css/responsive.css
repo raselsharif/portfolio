@@ -2,12 +2,15 @@
 @media (max-width: 576px) {
 
     /* ========== banner section ========= */
-    html,body{
+    html,
+    body {
         overflow-x: hidden;
     }
+
     #navbar {
         padding: 0;
     }
+
     .navbar .navbar-collapse .navbar-nav {
         background-color: #191919;
         padding: 8px 20px;
@@ -17,6 +20,7 @@
         z-index: 2;
         text-align: center;
     }
+
     #banner {
         background-position: 70%;
         background-repeat: no-repeat;
@@ -30,12 +34,345 @@
         margin-bottom: 25px !important;
         padding-top: 0 !important;
     }
+
     .banner__sub__heading {
         font-size: 25px;
         padding-bottom: 0 !important;
         line-height: 1.2;
     }
+
     .banner__link__items {
         display: none;
     }
+
+    /* ======== about section ======= */
+    #about,
+    #resume,
+    #portfolio,
+    #blog,
+    #contact {
+
+        padding-top: 0 !important;
+    }
+
+    .about__area {
+        padding-top: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .about__img {
+        text-align: center;
+    }
+
+    .about__img img {
+        height: 150px !important;
+        width: 150px !important;
+        border-radius: 50%;
+    }
+
+    .about__heading__area {
+        margin-top: 30px;
+    }
+
+    .about__who {
+        text-align: center;
+    }
+
+    .about__who__details {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .about__cv {
+        margin-bottom: 20px;
+    }
+
+    .common__heding__head {
+        font-size: 38px;
+    }
+
+    .about__card {
+        padding: 20px 25px;
+    }
+
+    .testi__card {
+        padding: 30px 20px;
+    }
+
+    .testi__card::after {
+        right: 20px;
+        top: 10px;
+        font-size: 40px;
+    }
+
+    .plan__card {
+        padding: 30px 0;
+        margin-top: 15px;
+    }
+
+    /* =======  resume section ======= */
+    .resume__area {
+        padding: 0 10px;
+    }
+
+    .skill__footer__para {
+        margin-bottom: 20px;
+    }
+
+    /* ======= contact section ====== */
+    .contact__name {
+        margin-bottom: 20px;
+    }
+
+    .form__heading {
+        margin-top: 35px;
+    }
+}
+
+/* =========== small device =========== */
+@media (min-width: 576px) and (max-width:767.98px) {
+    /* ========== banner section ========= */
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        padding: 0;
+    }
+
+    .navbar .navbar-collapse .navbar-nav {
+        background-color: #191919;
+        padding: 8px 20px;
+        position: relative;
+        top: 8px;
+        width: 200px;
+        z-index: 2;
+        text-align: center;
+    }
+
+    #banner {
+        background-position: 70%;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .banner__main__heading {
+        font-size: 60px;
+        line-height: 1;
+        color: #fff;
+        margin-bottom: 25px !important;
+        padding-top: 0 !important;
+    }
+
+    .banner__sub__heading {
+        font-size: 25px;
+        padding-bottom: 0 !important;
+        line-height: 1.2;
+    }
+
+    .banner__link__items {
+        display: none;
+    }
+
+    /* ======== about section ======= */
+    #about,
+    #resume,
+    #portfolio,
+    #blog,
+    #contact {
+
+        padding-top: 0 !important;
+    }
+
+    .about__area {
+        padding-top: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .about__img {
+        text-align: center;
+    }
+
+    .about__img img {
+        height: 150px !important;
+        width: 150px !important;
+        border-radius: 50%;
+    }
+
+    .about__heading__area {
+        margin-top: 30px;
+    }
+
+    .about__who {
+        text-align: center;
+    }
+
+    .about__who__details {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .about__cv {
+        margin-bottom: 20px;
+    }
+
+    .common__heding__head {
+        font-size: 42px;
+    }
+
+    .about__card {
+        padding: 20px 25px;
+    }
+
+    .testi__card {
+        padding: 30px 20px;
+    }
+
+    .testi__card::after {
+        right: 20px;
+        top: 10px;
+        font-size: 40px;
+    }
+
+    .plan__card {
+        padding: 30px 0;
+        margin-top: 15px;
+    }
+
+    /* =======  resume section ======= */
+    .resume__area {
+        padding: 0 10px;
+    }
+
+    .skill__footer__para {
+        margin-bottom: 20px;
+    }
+
+    /* ======= contact section ====== */
+    .contact__name {
+        margin-bottom: 20px;
+    }
+
+    .form__heading {
+        margin-top: 35px;
+    }
+}
+
+/* ======== medium device ======== */
+@media (min-width: 768px) and (max-width:991.98px){
+ /* ========== banner section ========= */
+ html,
+ body {
+     overflow-x: hidden;
+ }
+
+ #navbar {
+     padding: 0;
+ }
+
+ #banner {
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
+
+ .banner__main__heading {
+     font-size: 60px;
+     line-height: 1;
+     color: #fff;
+     margin-bottom: 25px !important;
+     padding-top: 0 !important;
+ }
+
+ .banner__sub__heading {
+     font-size: 25px;
+     padding-bottom: 0 !important;
+     line-height: 1.2;
+ }
+
+ .banner__link__items {
+     display: none;
+ }
+
+ /* ======== about section ======= */
+ #about {
+     padding-top: 0 !important;
+ }
+
+ .about__area {
+     padding-top: 0 !important;
+     margin-left: 0 !important;
+ }
+
+ .about__img {
+     text-align: center;
+ }
+
+ .about__img img {
+     height: 250px !important;
+     width: 250px !important;
+     border-radius: 50%;
+ }
+
+ .about__heading__area {
+     margin-top: 30px;
+ }
+
+ .about__who {
+     text-align: center;
+ }
+
+ .about__who__details {
+     font-size: 25px;
+     font-weight: 600;
+     line-height: 1.4;
+     text-align: center;
+ }
+
+ .about__cv {
+     margin-bottom: 20px;
+ }
+
+ .common__heding__head {
+     font-size: 42px;
+ }
+
+ .about__card {
+    padding: 20px 25px;
+}
+
+ .testi__card {
+    padding: 35px 30px;
+}
+
+ .testi__card::after {
+     right: 20px;
+     top: 10px;
+     font-size: 40px;
+ }
+
+ .plan__card {
+     padding: 30px 0;
+     margin-top: 15px;
+ }
+
+ /* =======  resume section ======= */
+ .resume__area {
+     padding: 0 10px;
+ }
+
+ .skill__footer__para {
+     margin-bottom: 20px;
+ }
+
+ /* ======= contact section ====== */
+
+ .form__heading {
+     margin-top: 35px;
+ }
 }

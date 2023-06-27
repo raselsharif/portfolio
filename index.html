@@ -12,6 +12,8 @@
     <!-- ======== bootstrap css ============== -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- ========= slick slider css ========== -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- ======= custom css ========== -->
     <link rel="stylesheet" href="css/style.css">
     <!-- ========= responsive css =========== -->
@@ -20,7 +22,7 @@
 
 <body>
     <!-- ====== nav section start ============= -->
-    <nav class="navbar navbar-expand-xl" id="navbar">
+    <nav class="navbar navbar-expand-md" id="navbar">
         <div class="container py-3">
             <a class="navbar-brand" href="#">RS</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -28,21 +30,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto column-gap-5">
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="#about">about</a>
+                <ul class="navbar-nav ms-auto column-gap-3">
+                    <li class="nav-item ">
+                        <a class="nav-link about__links" aria-current="page" href="#about">about</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link resume__links" href="#resume">resume</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#resume">resume</a>
+                        <a class="nav-link portfolio__links" href="#portfolio">portfolio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">portfolio</a>
+                        <a class="nav-link blog__links" href="#blog">blog</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#blog">blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">contact</a>
+                    <li class="nav-item ">
+                        <a class="nav-link contact__links" href="#contact">contact</a>
                     </li>
                 </ul>
             </div>
@@ -55,7 +57,7 @@
             <div class="banner__heading pt-1 text-center">
                 <h1 class="banner__main__heading pt-5 mb-5">rasel sharif</h1>
                 <h2 class="banner__sub__heading pb-5">
-                    I'm a <span id="#element"></span>
+                    I'm a <span id="myTitle"></span>
                 </h2>
             </div>
             <div class="banner__icons">
@@ -84,14 +86,16 @@
     <!-- ============ about section start ============= -->
     <section id="about" class="py-5 ">
         <div class="container">
+            <div class="about__close close__btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
             <div class="row pt-5">
                 <div class="common__heading col-12 text-center mb-5">
                     <p class="common__headin__title mb-4">Get to know me </p>
-                    <h2 class="common__heding__head mb-5">about me</h2>
-                    <div class="common__hading__underline"></div>
+                    <h2 class="common__heding__head underline mb-5">about me</h2>
                 </div>
-                <div class="row">
-                    <div class="col-12 col-lg-6">
+                <div class="row pt-5 about__area">
+                    <div class="col-12 col-lg-6 about__img">
                         <img src="images/about.jpg" alt="about image" class="img-fluid h-100">
                     </div>
                     <div class="col-12 col-lg-6">
@@ -104,25 +108,25 @@
                                 convert to figma to html, psd to html and convert to bootstrap.iterate fast and deliver
                                 faster.</p>
                             <div class="row about__contact my-4 row-gap-3">
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-md-6 col-lg-6">
                                     <div class="about__name">
                                         <h5>Name: </h3>
                                             <span>Rasel Sharif</span>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-md-6 col-lg-6">
                                     <div class="about__email">
                                         <h5>Email: </h5>
                                         <span>raselsharif9@gmail.com</span>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-md-6 col-lg-6">
                                     <div class="about__age">
                                         <h5>Age:</h5>
                                         <span>26</span>
                                     </div>
                                 </div>
-                                <div class="col-12 col-lg-6">
+                                <div class="col-12 col-md-6 col-lg-6">
                                     <div class="about__from">
                                         <h5>From:</h5>
                                         <span> Dhaka, Bangladesh</span>
@@ -132,10 +136,10 @@
                             <div class="row">
                                 <div class="col-12 col-lg-12">
                                     <div class="row d-flex align-items-center">
-                                        <div class="about__cv col-12 col-lg-6">
+                                        <div class="about__cv col-12 col-sm-6 col-lg-6">
                                             <a href="#" class="cv__link">Download CV</a>
                                         </div>
-                                        <div class="about__icon__main col-12 col-lg-6">
+                                        <div class="about__icon__main col-12 col-sm-6 col-lg-6">
                                             <ul class="about__icon d-flex column-gap-3">
                                                 <li class="about__items">
                                                     <a href="https://www.facebook.com/raselsharif0/" target="_blank"
@@ -172,7 +176,7 @@
                 </div>
             </div>
             <div class="row row-gap-4">
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="about__card">
                         <div class="card__logo">
 
@@ -182,7 +186,7 @@
                         <p class="card__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="about__card">
                         <div class="card__logo">
 
@@ -192,7 +196,7 @@
                         <p class="card__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="about__card">
                         <div class="card__logo">
 
@@ -202,7 +206,7 @@
                         <p class="card__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="about__card">
                         <div class="card__logo">
 
@@ -212,7 +216,7 @@
                         <p class="card__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="about__card">
                         <div class="card__logo">
 
@@ -222,7 +226,7 @@
                         <p class="card__para">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="about__card">
                         <div class="card__logo">
 
@@ -241,75 +245,77 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-6">
-                    <div class="testi__card">
-                        <div class="testi__detail">
-                            <div class="testi__img">
-                                <img src="images/fav.jpg" alt="testi img">
+                <div class="slick__slider">
+                    <div class="col-lg-6">
+                        <div class="testi__card">
+                            <div class="testi__detail">
+                                <div class="testi__img">
+                                    <img src="images/fav.jpg" alt="testi img">
+                                </div>
+                                <div class="testi__info">
+                                    <h5 class="testi__name">Rasel Sharif</h5>
+                                    <p class="testi__title">Web Designer</p>
+                                </div>
                             </div>
-                            <div class="testi__info">
-                                <h5 class="testi__name">Rasel Sharif</h5>
-                                <p class="testi__title">Web Designer</p>
+                            <div class="testi__para">
+                                Emma did an excellent creative job, addressing our request quickly, and also providing her
+                                own graphic insight, being open to feedback and changes or edits when they arose. She worked
+                                with us the entire way. Highly recommended.
                             </div>
-                        </div>
-                        <div class="testi__para">
-                            Emma did an excellent creative job, addressing our request quickly, and also providing her
-                            own graphic insight, being open to feedback and changes or edits when they arose. She worked
-                            with us the entire way. Highly recommended.
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="testi__card">
-                        <div class="testi__detail">
-                            <div class="testi__img">
-                                <img src="images/fav.jpg" alt="testi img">
+                    <div class="col-lg-6">
+                        <div class="testi__card">
+                            <div class="testi__detail">
+                                <div class="testi__img">
+                                    <img src="images/fav.jpg" alt="testi img">
+                                </div>
+                                <div class="testi__info">
+                                    <h5 class="testi__name">Rasel Sharif</h5>
+                                    <p class="testi__title">Web Designer</p>
+                                </div>
                             </div>
-                            <div class="testi__info">
-                                <h5 class="testi__name">Rasel Sharif</h5>
-                                <p class="testi__title">Web Designer</p>
+                            <div class="testi__para">
+                                Emma did an excellent creative job, addressing our request quickly, and also providing her
+                                own graphic insight, being open to feedback and changes or edits when they arose. She worked
+                                with us the entire way. Highly recommended.
                             </div>
-                        </div>
-                        <div class="testi__para">
-                            Emma did an excellent creative job, addressing our request quickly, and also providing her
-                            own graphic insight, being open to feedback and changes or edits when they arose. She worked
-                            with us the entire way. Highly recommended.
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="testi__card">
-                        <div class="testi__detail">
-                            <div class="testi__img">
-                                <img src="images/fav.jpg" alt="testi img">
+                    <div class="col-lg-6">
+                        <div class="testi__card">
+                            <div class="testi__detail">
+                                <div class="testi__img">
+                                    <img src="images/fav.jpg" alt="testi img">
+                                </div>
+                                <div class="testi__info">
+                                    <h5 class="testi__name">Rasel Sharif</h5>
+                                    <p class="testi__title">Web Designer</p>
+                                </div>
                             </div>
-                            <div class="testi__info">
-                                <h5 class="testi__name">Rasel Sharif</h5>
-                                <p class="testi__title">Web Designer</p>
+                            <div class="testi__para">
+                                Emma did an excellent creative job, addressing our request quickly, and also providing her
+                                own graphic insight, being open to feedback and changes or edits when they arose. She worked
+                                with us the entire way. Highly recommended.
                             </div>
-                        </div>
-                        <div class="testi__para">
-                            Emma did an excellent creative job, addressing our request quickly, and also providing her
-                            own graphic insight, being open to feedback and changes or edits when they arose. She worked
-                            with us the entire way. Highly recommended.
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="testi__card">
-                        <div class="testi__detail">
-                            <div class="testi__img">
-                                <img src="images/fav.jpg" alt="testi img">
+                    <div class="col-lg-6">
+                        <div class="testi__card">
+                            <div class="testi__detail">
+                                <div class="testi__img">
+                                    <img src="images/fav.jpg" alt="testi img">
+                                </div>
+                                <div class="testi__info">
+                                    <h5 class="testi__name">Rasel Sharif</h5>
+                                    <p class="testi__title">Web Designer</p>
+                                </div>
                             </div>
-                            <div class="testi__info">
-                                <h5 class="testi__name">Rasel Sharif</h5>
-                                <p class="testi__title">Web Designer</p>
+                            <div class="testi__para">
+                                Emma did an excellent creative job, addressing our request quickly, and also providing her
+                                own graphic insight, being open to feedback and changes or edits when they arose. She worked
+                                with us the entire way. Highly recommended.
                             </div>
-                        </div>
-                        <div class="testi__para">
-                            Emma did an excellent creative job, addressing our request quickly, and also providing her
-                            own graphic insight, being open to feedback and changes or edits when they arose. She worked
-                            with us the entire way. Highly recommended.
                         </div>
                     </div>
                 </div>
@@ -322,8 +328,8 @@
                     <div class="common__hading__underline"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
+            <div class="row justify-content-md-center">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="plan__card">
                         <div class="plan__logo">
                             <i class="fa-solid fa-droplet"></i>
@@ -343,7 +349,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="plan__card">
                         <div class="plan__logo">
                             <i class="fa-solid fa-droplet"></i>
@@ -363,7 +369,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <div class="plan__card">
                         <div class="plan__logo">
                             <i class="fa-solid fa-droplet"></i>
@@ -390,15 +396,18 @@
     <!-- ============ resume section start ============= -->
     <section id="resume" class="py-5">
         <div class="container">
+            <div class="resume__close close__btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
             <div class="row">
                 <div class="common__heading col-12 text-center mb-5">
                     <p class="common__headin__title mb-4">Check out my Resume </p>
-                    <h2 class="common__heding__head mb-5">Resume</h2>
-                    <div class="common__hading__underline"></div>
+                    <h2 class="common__heding__head underline mb-5">Resume</h2>
+
                 </div>
             </div>
-            <div class="row g-5">
-                <div class="col-lg-6">
+            <div class="row g-5 resume__area">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="row">
                         <div class="resume__heading col-12">
                             <h2 class="resume__heding__head ">Education</h2>
@@ -431,7 +440,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="row">
                         <div class="resume__heading col-12">
                             <h2 class="resume__heding__head ">Experience</h2>
@@ -473,7 +482,7 @@
                 </div>
             </div>
             <div class="row row-gap-5">
-                <div class="col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="skill__main">
                         <div class="skill__bg"></div>
                         <div class="skill__text">
@@ -482,7 +491,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="skill__main">
                         <div class="skill__bg"></div>
                         <div class="skill__text">
@@ -491,7 +500,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="skill__main">
                         <div class="skill__bg"></div>
                         <div class="skill__text">
@@ -500,7 +509,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="skill__main">
                         <div class="skill__bg"></div>
                         <div class="skill__text">
@@ -509,7 +518,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="skill__main">
                         <div class="skill__bg"></div>
                         <div class="skill__text">
@@ -518,7 +527,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-md-6 col-lg-6">
                     <div class="skill__main">
                         <div class="skill__bg"></div>
                         <div class="skill__text">
@@ -530,7 +539,7 @@
             </div>
 
             <div class="row pt-5">
-                <div class="col-lg-6">
+                <div class="col-12 col-lg-6">
                     <div class="skill__footer">
                         <h3 class="skill__footer__heading pb-4">Take a tour of my office</h3>
                         <div class="skill__footer__para">
@@ -543,7 +552,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-12 col-lg-6">
                     <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UalTfOIDQ7M"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -557,11 +566,13 @@
     <!-- ============ portfolio section start ============= -->
     <section id="portfolio" class="py-5">
         <div class="container">
+            <div class="portfolio__close close__btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
             <div class="row">
                 <div class="common__heading col-12 text-center mb-5">
                     <p class="common__headin__title mb-4">Showcasing some of my best work</p>
-                    <h2 class="common__heding__head mb-5">Portfolio</h2>
-                    <div class="common__hading__underline"></div>
+                    <h2 class="common__heding__head underline mb-5">Portfolio</h2>
                 </div>
             </div>
 
@@ -578,10 +589,10 @@
             </div>
             <!-- ========= portfolio gallery ======== -->
             <div class="row row-gap-3">
-                <div class="col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <a href="#" class="potfolio__img__main">
                         <div class="portfolio__img">
-                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid">
+                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid w-100">
                             <div class="portfolio__overly">
                                 <a href="https://raselsharif.github.io/cit-hw-responsive02-valentina/" target="_blank"
                                     class="portfolio__link">Visit Website</a>
@@ -589,10 +600,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <a href="#" class="potfolio__img__main">
                         <div class="portfolio__img">
-                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid">
+                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid w-100">
                             <div class="portfolio__overly">
                                 <a href="https://raselsharif.github.io/cit-hw-responsive02-valentina/" target="_blank"
                                     class="portfolio__link">Visit Website</a>
@@ -600,10 +611,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <a href="#" class="potfolio__img__main">
                         <div class="portfolio__img">
-                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid">
+                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid w-100">
                             <div class="portfolio__overly">
                                 <a href="https://raselsharif.github.io/cit-hw-responsive02-valentina/" target="_blank"
                                     class="portfolio__link">Visit Website</a>
@@ -611,10 +622,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <a href="#" class="potfolio__img__main">
                         <div class="portfolio__img">
-                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid">
+                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid w-100">
                             <div class="portfolio__overly">
                                 <a href="https://raselsharif.github.io/cit-hw-responsive02-valentina/" target="_blank"
                                     class="portfolio__link">Visit Website</a>
@@ -622,10 +633,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <a href="#" class="potfolio__img__main">
                         <div class="portfolio__img">
-                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid">
+                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid w-100">
                             <div class="portfolio__overly">
                                 <a href="https://raselsharif.github.io/cit-hw-responsive02-valentina/" target="_blank"
                                     class="portfolio__link">Visit Website</a>
@@ -633,10 +644,10 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-sm-6 col-lg-4">
                     <a href="#" class="potfolio__img__main">
                         <div class="portfolio__img">
-                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid">
+                            <img src="images/portfolio01.jpg" alt="portfolio image" class="img-fluid w-100">
                             <div class="portfolio__overly">
                                 <a href="https://raselsharif.github.io/cit-hw-responsive02-valentina/" target="_blank"
                                     class="portfolio__link">Visit Website</a>
@@ -651,11 +662,13 @@
     <!-- ============ blog section start ============= -->
     <section id="blog" class="py-5">
         <div class="container">
+            <div class="blog__close close__btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
             <div class="row">
                 <div class="common__heading col-12 text-center mb-5">
                     <p class="common__headin__title mb-4">Check out my latest blog posts</p>
-                    <h2 class="common__heding__head mb-5">My Blog</h2>
-                    <div class="common__hading__underline"></div>
+                    <h2 class="common__heding__head underline mb-5">My Blog</h2>
                 </div>
             </div>
             <div class="row">
@@ -665,10 +678,10 @@
             </div>
 
             <div class="row row-gap-5">
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
-                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid">
+                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid w-100">
                             <div class="blog__date">
                                 <h6>26 Jun, 23</h6>
                             </div>
@@ -680,10 +693,10 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
-                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid">
+                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid w-100">
                             <div class="blog__date">
                                 <h6>26 Jun, 23</h6>
                             </div>
@@ -695,10 +708,10 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
-                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid">
+                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid w-100">
                             <div class="blog__date">
                                 <h6>26 Jun, 23</h6>
                             </div>
@@ -710,10 +723,10 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
-                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid">
+                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid w-100">
                             <div class="blog__date">
                                 <h6>26 Jun, 23</h6>
                             </div>
@@ -725,10 +738,10 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
-                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid">
+                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid w-100">
                             <div class="blog__date">
                                 <h6>26 Jun, 23</h6>
                             </div>
@@ -740,10 +753,10 @@
                             porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-12 col-md-6 col-lg-4">
                     <a href="#" class="blog__img__main">
                         <div class="blog__img mb-3">
-                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid">
+                            <img src="images/blog01.jpg" alt="blog img" class="img-fluid w-100">
                             <div class="blog__date">
                                 <h6>26 Jun, 23</h6>
                             </div>
@@ -763,11 +776,14 @@
     <!-- ============ contact section start ============= -->
     <section id="contact" class="py-5">
         <div class="container">
+            <div class="contact__close close__btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
             <div class="row">
                 <div class="common__heading col-12 text-center mb-5">
                     <p class="common__headin__title mb-4">Feel free to contact me anytimes</p>
-                    <h2 class="common__heding__head mb-5">Get in Touch</h2>
-                    <div class="common__hading__underline"></div>
+                    <h2 class="common__heding__head underline mb-5">Get in Touch</h2>
+
                 </div>
             </div>
 
@@ -777,10 +793,10 @@
                     <div class="form">
                         <form action="">
                             <div class="row mb-3">
-                                <div class="col-lg-6">
+                                <div class="col-12 col-md-6 col-lg-6 contact__name">
                                     <input type="text" placeholder="Name" class="form-control" required>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-12 col-md-6 col-lg-6">
                                     <input type="email" placeholder="Email" class="form-control" required>
                                 </div>
                             </div>
@@ -791,11 +807,12 @@
                             </div>
                             <div class="row mb-4">
                                 <div class="col-lg-12">
-                                    <textarea name="" id="" cols="15" rows="10" placeholder="Message" class="form-control" required></textarea>
+                                    <textarea name="" id="" cols="15" rows="10" placeholder="Message"
+                                        class="form-control" required></textarea>
                                 </div>
                             </div>
                             <div class="form__btn__main">
-                               <button class="form__btn">Send Message</button>
+                                <button class="form__btn">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -848,20 +865,7 @@
         </div>
     </section>
     <!-- ============ contact section end ============= -->
-    <!-- ============ banner section start ============= -->
 
-    <!-- ============ banner section end ============= -->
-
-    <!-- ============ banner section start ============= -->
-
-    <!-- ============ banner section end ============= -->
-    <!-- ============ banner section start ============= -->
-
-    <!-- ============ banner section end ============= -->
-
-    <!-- ============ banner section start ============= -->
-
-    <!-- ============ banner section end ============= -->
 
 
     <!-- ======== jQuery js ============= -->
@@ -870,6 +874,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
         integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
         crossorigin="anonymous"></script>
+    <!-- ========= slick slider js ======= -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- ======= fontawesome CDN link ============= -->
     <script src="https://kit.fontawesome.com/667aadf96a.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
