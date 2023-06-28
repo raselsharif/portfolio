@@ -43,6 +43,7 @@ p {
 a {
     text-decoration: none;
 }
+
 :root {
     --primaryC: #009e66;
     --fontHC: #F0F0F0;
@@ -206,9 +207,11 @@ a {
     cursor: pointer;
     z-index: 100;
 }
-#about{
+
+#about {
     overflow-x: hidden;
 }
+
 .common__headin__title {
     font-size: 15px;
     color: var(--praColor);
@@ -280,6 +283,14 @@ a {
     color: var(--praColor);
 }
 
+.about__email a {
+    color: var(--primaryC);
+}
+
+.about__email a:hover {
+    opacity: 0.7;
+}
+
 .cv__link {
     display: inline-block;
     font-weight: 400;
@@ -303,6 +314,12 @@ a {
     box-shadow: 0 6px 16px rgba(0, 0, 0, .2);
     padding: 38px 42px;
     transition: all .15s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+.about__card:hover {
+    border-bottom: 2px solid var(--primaryC);
+
 }
 
 .card__logo {
@@ -543,6 +560,37 @@ a {
     font-weight: 400;
 }
 
+.office__vedio {
+    background: url(../images/myOffice.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.office__vedio a:hover{
+    opacity: 0.8;
+}
+.play__btn {
+    background: #fff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px var(--primaryC);
+}
+.vbox-container {
+    background: rgba(0, 158, 103, 0.3);
+}
+.vbox-content {
+   max-height: 90% !important;
+}
+
 /* ============= resume section start ============= */
 
 /* ================ portfolio" section end ============== */
@@ -552,6 +600,15 @@ a {
 
 .list__btn {
     cursor: pointer;
+    transition: all linear 0.3s;
+}
+.list__btn:hover{
+    color: var(--primaryC);
+    border-bottom: 1px solid var(--primaryC);
+}
+.list__btn.btn__active {
+    color: var(--primaryC);
+    border-bottom: 1px solid var(--primaryC);
 }
 
 .portfolio__img {
@@ -656,7 +713,7 @@ a {
 .form input,
 textarea {
     border: none !important;
-    padding: 15px 10px;
+    padding: 15px 25px;
 }
 
 textarea:focus,
@@ -678,8 +735,8 @@ input[type=number]:focus,
 textarea {
     background: #161616 !important;
     color: #fff !important;
+    caret-color: var(--primaryC);
 }
-
 .form input::placeholder,
 textarea::placeholder {
     color: #777 !important;
@@ -730,7 +787,12 @@ textarea::placeholder {
     font-size: 30px;
     color: var(--primaryC);
 }
-
+.info__title a{
+    color: var(--praColor);
+}
+.info__title a:hover{
+    opacity: 0.8;
+}
 .info__name {
     margin-bottom: 15px;
 }
