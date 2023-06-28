@@ -171,12 +171,13 @@ a {
 #contact {
     background: var(--bg);
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 0;
     opacity: 0;
     z-index: -9999;
+    transition: all linear 0.5s;
 }
 
 #about.about__top,
@@ -655,6 +656,7 @@ a {
 .form input,
 textarea {
     border: none !important;
+    padding: 15px 10px;
 }
 
 textarea:focus,
@@ -675,6 +677,7 @@ input[type=number]:focus,
 .form input,
 textarea {
     background: #161616 !important;
+    color: #fff !important;
 }
 
 .form input::placeholder,

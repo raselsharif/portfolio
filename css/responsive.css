@@ -10,7 +10,12 @@
     #navbar {
         padding: 0;
     }
-
+    #resume,
+    #portfolio,
+    #blog,
+    #contact {
+        padding-top: 70px  !important;
+    }
     .navbar .navbar-collapse .navbar-nav {
         background-color: #191919;
         padding: 8px 20px;
@@ -46,11 +51,7 @@
     }
 
     /* ======== about section ======= */
-    #abou {
-        padding-top: 0 !important;
-    }
-
-
+   
     .about__area {
         padding-top: 0 !important;
         margin-left: 0 !important;
@@ -84,7 +85,9 @@
     .about__cv {
         margin-bottom: 20px;
     }
-
+    .about__icon {
+        margin-left: 84px;
+    }
     .common__heding__head {
         font-size: 38px;
     }
@@ -109,6 +112,9 @@
     }
 
     /* =======  resume section ======= */
+    #resume{
+        overflow-x: hidden !important;
+    }
     .resume__area {
         padding: 0 10px;
     }
@@ -138,6 +144,13 @@
 
     #navbar {
         padding: 0;
+    }
+
+    #resume,
+    #portfolio,
+    #blog,
+    #contact {
+        padding-top: 70px !important;
     }
 
     .navbar .navbar-collapse .navbar-nav {

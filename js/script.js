@@ -14,56 +14,66 @@ $(function(){
 
   $(".about__links").click(function(){
     $("#about").addClass("about__top")    
-    $("#about").fadeIn()    
+    // $("#about").fadeIn()    
   })
   $(".about__close").click(function(){
     $("#about").removeClass("about__top")  
-    $("#about").fadeOut()    
+    // $("#about").fadeOut()    
   })
   // ===================================
   $(".resume__links").click(function(){
     $("#resume").addClass("resume__top") 
-    $("#about").fadeIn()
+    // $("#resume").fadeIn()
   })
   $(".resume__close").click(function(){
     $("#resume").removeClass("resume__top") 
-    $("#about").fadeOut()
+    // $("#resume").fadeOut()
   })
   // ===================================
 
   $(".portfolio__links").click(function(){
     $("#portfolio").addClass("portfolio__top") 
-    $("#about").fadeIn()
+    // $("#portfolio").fadeIn()
   })
   $(".portfolio__close").click(function(){
     $("#portfolio").removeClass("portfolio__top")  
-    $("#about").fadeOut()
+    // $("#portfolio").fadeOut()
   })
   // ===================================
 
   $(".blog__links").click(function(){
     
     $("#blog").addClass("blog__top") 
-    $("#about").fadeIn()
+    // $("#blog").fadeIn()
   })
   $(".blog__close").click(function(){
     
     $("#blog").removeClass("blog__top") 
-    $("#about").fadeOut()
+    // $("#blog").fadeOut()
   })
   // ===================================
 
   $(".contact__links").click(function(){
     
     $("#contact").addClass("contact__top")  
-    $("#about").fadeIn()
+    // $("#contact").fadeIn()
   })
   $(".contact__close").click(function(){
     
     $("#contact").removeClass("contact__top")
-    $("#about").fadeOut()
+    // $("#contact").fadeOut()
   })
 
+
+  // =========== mixitup js ==========
+  var mixer = mixitup(".mixitup", {
+    selectors: {
+        target: '.mix'
+    },
+    animation: {
+        duration: 300
+    }
+});
   // ============= slick slider ==========
   $('.slick__slider').slick({
     infinite: true,
