@@ -1,6 +1,5 @@
 
 
-
 // =========== typed js for my title =====
 var typed = new Typed('#myTitle', {
   strings: ['Web Designer', 'Future Web Developer'],
@@ -19,7 +18,18 @@ var mixer = mixitup(".mixitup", {
 // ========= section on top ======
 
 $(function () {
+// ========== nvbar icon change =========
 
+$(".navbar-toggler-icon").click(function(){
+  $(this).toggleClass("navbar_close");
+})
+
+// ======= hide menubar click on body =========
+$(".nav-link").click(function(){
+  $("#navbarNav").removeClass("show")
+  $(".navbar-toggler-icon").removeClass("navbar_close")
+})
+// ========== section close =========
   $(".about__links").click(function () {
     $("#about").addClass("about__top")
     // $("#about").fadeIn()    
