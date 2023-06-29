@@ -720,7 +720,7 @@ a {
 .form input,
 textarea {
     border: none !important;
-    padding: 15px 25px;
+    padding: 15px 25px !important;
 }
 
 textarea:focus,
