@@ -547,7 +547,7 @@
                         </div>
                     </div>
                 </div>
-               
+
                 <div class="col-12 col-md-6 col-lg-6">
                     <div class="skill__main">
                         <div class="skill__bg" style="width: 0%;"></div>
@@ -812,7 +812,7 @@
                 <div class="col-lg-7">
                     <h5 class="form__heading mb-4">Message Me</h5>
                     <div class="form">
-                        <form action="">
+                        <form action="" method="post">
                             <div class="row mb-3">
                                 <div class="col-12 col-md-6 col-lg-6 contact__name">
                                     <input type="text" placeholder="Name" class="form-control name">
@@ -837,14 +837,16 @@
                             </div>
                             <div class="row mb-4">
                                 <div class="col-lg-12">
-                                    <textarea name="" id="" cols="" rows="5" placeholder="Message" class="form-control text"></textarea>
+                                    <textarea name="" id="" cols="" rows="5" placeholder="Message"
+                                        class="form-control text"></textarea>
                                     <div class="error">
                                         <p class="error__msg text__err"></p>
                                     </div>
                                 </div>
                             </div>
                             <div class="form__btn__main">
-                                <button class="form__btn">Send Message</button>
+                                <button class="form__btn" type="button" onclick="SendEmail()">Send Message</button>
+
                             </div>
                         </form>
                     </div>
@@ -919,6 +921,8 @@
     <!-- ======= fontawesome CDN link ============= -->
     <script src="https://kit.fontawesome.com/667aadf96a.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- ======= smtp js ========= -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- ========= custom js ============== -->
     <script src="js/script.js"></script>
 </body>
