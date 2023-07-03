@@ -51,9 +51,162 @@ a {
     --bg: #101011;
 }
 
+/* =========== pre loader =========== */
+.preloader__main {
+    background: #101011;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader {
+    position: fixed;
+    width: 84px;
+    height: 84px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.preloader span {
+    display: block;
+    width: 35px;
+    height: 8px;
+    border-radius: 4px;
+    background: #009e66;
+    position: absolute;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+    animation-timing-function: ease;
+}
+
+.preloader span:nth-of-type(4n - 3) {
+    left: 24.5px;
+    -webkit-animation-name: rotate1;
+    animation-name: rotate1;
+}
+
+.preloader span:nth-of-type(3) {
+    left: 2px;
+}
+
+.preloader span:nth-of-type(7) {
+    right: 2px;
+}
+
+.preloader span:nth-of-type(4n-1) {
+    top: 24.5px;
+    width: 8px;
+    height: 35px;
+    -webkit-animation-name: rotate1;
+    animation-name: rotate1;
+}
+
+.preloader span:nth-of-type(5) {
+    bottom: 0;
+}
+
+.preloader span:nth-of-type(4n - 2) {
+    transform: rotate(-45deg);
+    -webkit-animation-name: rotate2;
+    animation-name: rotate2;
+}
+
+.preloader span:nth-of-type(2) {
+    top: 12px;
+}
+
+.preloader span:nth-of-type(6) {
+    bottom: 12px;
+    right: 0;
+}
+
+.preloader span:nth-of-type(4n) {
+    transform: rotate(45deg);
+    -webkit-animation-name: rotate3;
+    animation-name: rotate3;
+}
+
+.preloader span:nth-of-type(4) {
+    bottom: 12px;
+}
+
+.preloader span:nth-of-type(8) {
+    top: 12px;
+    right: 0;
+}
+
+@-webkit-keyframes rotate1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotate1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+}
+
+@-webkit-keyframes rotate2 {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    to {
+        transform: rotate(135deg);
+    }
+}
+
+@keyframes rotate2 {
+    from {
+        transform: rotate(-45deg);
+    }
+
+    to {
+        transform: rotate(135deg);
+    }
+}
+
+@-webkit-keyframes rotate3 {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(225deg);
+    }
+}
+
+@keyframes rotate3 {
+    from {
+        transform: rotate(45deg);
+    }
+
+    to {
+        transform: rotate(225deg);
+    }
+}
+
 /* ============= navbar section start ============= */
 #navbar {
-    /* background: rgba(0, 0, 0, 0.322); */
     position: fixed;
     width: 100%;
     top: 0;
@@ -65,13 +218,16 @@ a {
     background-image: url(../images/bars.svg);
     transition: all linear 0.5s;
 }
+
 .navbar-toggler-icon.navbar_close {
     background-image: url(../images/xmark-solid.svg);
 }
-.navbar__hide{
+
+.navbar__hide {
     opacity: 0;
     visibility: hidden;
 }
+
 .navbar-toggler:focus {
     text-decoration: none;
     outline: 0px;
@@ -107,8 +263,8 @@ a {
 
 /* ================ navbar section end ============== */
 
- /* ---- particles.js container ---- */
-  #particles-js {
+/* ---- particles.js container ---- */
+#particles-js {
     position: fixed;
     top: 0;
     left: 0;
@@ -118,10 +274,12 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-  } /* ---- stats.js ---- */
-  .count-particles {
+}
+
+/* ---- stats.js ---- */
+.count-particles {
     background: #000022;
-    position: absolute;
+    position: fixed;
     top: 48px;
     left: 0;
     width: 80px;
@@ -133,25 +291,30 @@ a {
     padding-bottom: 2px;
     font-family: Helvetica, Arial, sans-serif;
     font-weight: bold;
-  }
-  .js-count-particles {
+}
+
+.js-count-particles {
     font-size: 1.1em;
-  }
-  #stats,
-  .count-particles {
+}
+
+#stats,
+.count-particles {
     -webkit-user-select: none;
     margin-top: 5px;
     margin-left: 5px;
-  }
-  #stats {
+}
+
+#stats {
     border-radius: 3px 3px 0 0;
     overflow: hidden;
-  }
-  .count-particles {
+}
+
+.count-particles {
     border-radius: 0 0 3px 3px;
-  }
+}
+
 #banner {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg.jpg); */
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../images/bgCopy.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -230,6 +393,7 @@ a {
     z-index: -9999;
     transition: all linear 0.5s;
     background: url(../images/svgbg.svg) !important;
+    padding-top: 100px;
 }
 
 #about.about__top,
@@ -623,9 +787,11 @@ a {
     justify-content: center;
     align-items: center;
 }
-.office__vedio a:hover{
+
+.office__vedio a:hover {
     opacity: 0.8;
 }
+
 .play__btn {
     background: #fff;
     height: 60px;
@@ -636,11 +802,13 @@ a {
     align-items: center;
     box-shadow: 0 0 10px var(--primaryC);
 }
+
 .vbox-container {
     background: rgba(0, 158, 103, 0.3);
 }
+
 .vbox-content {
-   max-height: 90% !important;
+    max-height: 90% !important;
 }
 
 /* ============= resume section start ============= */
@@ -654,10 +822,12 @@ a {
     cursor: pointer;
     transition: all linear 0.3s;
 }
-.list__btn:hover{
+
+.list__btn:hover {
     color: var(--primaryC);
     border-bottom: 1px solid var(--primaryC);
 }
+
 .list__btn.btn__active {
     color: var(--primaryC);
     border-bottom: 1px solid var(--primaryC);
@@ -789,6 +959,7 @@ textarea {
     color: #fff !important;
     caret-color: var(--primaryC);
 }
+
 .form input::placeholder,
 textarea::placeholder {
     color: #777 !important;
@@ -839,16 +1010,21 @@ textarea::placeholder {
     font-size: 30px;
     color: var(--primaryC);
 }
-.info__title a{
+
+.info__title a {
     color: var(--praColor);
 }
-.info__title a:hover{
+
+.info__title a:hover {
     opacity: 0.8;
 }
+
 .info__name {
     margin-bottom: 15px;
 }
-.error__msg{
-    padding:10px 0 0 15px;
+
+.error__msg {
+    padding: 10px 0 0 15px;
 }
+
 /* ============= contact section start ============= */

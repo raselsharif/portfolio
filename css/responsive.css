@@ -10,6 +10,7 @@
     #navbar {
         padding: 0;
     }
+    #about,
     #resume,
     #portfolio,
     #blog,
@@ -145,7 +146,7 @@
     #navbar {
         padding: 0;
     }
-
+    #about,
     #resume,
     #portfolio,
     #blog,
@@ -188,11 +189,6 @@
     }
 
     /* ======== about section ======= */
-    #about {
-
-        padding-top: 0 !important;
-    }
-
     .about__area {
         padding-top: 0 !important;
         margin-left: 0 !important;
@@ -307,9 +303,6 @@
     }
 
     /* ======== about section ======= */
-    #about {
-        padding-top: 0 !important;
-    }
 
     .about__area {
         padding-top: 0 !important;
