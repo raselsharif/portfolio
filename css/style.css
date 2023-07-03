@@ -229,6 +229,7 @@ a {
     opacity: 0;
     z-index: -9999;
     transition: all linear 0.5s;
+    background: url(../images/svgbg.svg) !important;
 }
 
 #about.about__top,
