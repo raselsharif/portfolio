@@ -14,7 +14,7 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <!-- ========= slick slider css ========== -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <!-- ======== vanobox css ======== -->
+    <!-- ======== venobox css ======== -->
     <link rel="stylesheet" href="css/venobox.min.css">
     <!-- =========== aos css ============== -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -58,35 +58,38 @@
     </nav>
     <!-- ====== nav section end ============= -->
     <!-- ============ banner section start ============= -->
-    <section id="banner">
-        <div class="container">
-            <div class="banner__heading pt-1 text-center">
-                <h1 class="banner__main__heading pt-5 mb-5" data-aos="fade-right"  data-aos-duration="1000">rasel sharif</h1>
-                <h2 class="banner__sub__heading pb-5">
-                    I'm a <span id="myTitle"></span>
-                </h2>
-            </div>
-            <div class="banner__icons">
-                <ul class="banner__link__items">
-                    <li class="banner__items">
-                        <a href="https://www.facebook.com/raselsharif0/" target="_blank" class="banner__link">
-                            <i class="fa-brands fa-square-facebook"></i>
-                        </a>
-                    </li>
-                    <li class="banner__items">
-                        <a href="https://www.linkedin.com/in/raselsharif/" target="_blank" class="banner__link">
-                            <i class="fa-brands fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="banner__items">
-                        <a href="https://github.com/raselsharif" target="_blank" class="banner__link">
-                            <i class="fa-brands fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
+    <div id="particles-js">
+        <div class="count-particles"> </div>
+            <section id="banner">
+                <div class="container">
+                    <div class="banner__heading pt-1 text-center">
+                        <h1 class="banner__main__heading pt-5 mb-5" data-aos="fade-right"  data-aos-duration="1000">rasel sharif</h1>
+                        <h2 class="banner__sub__heading pb-5">
+                            I'm a <span id="myTitle"></span>
+                        </h2>
+                    </div>
+                    <div class="banner__icons">
+                        <ul class="banner__link__items">
+                            <li class="banner__items" data-aos="fade-left"  data-aos-duration="800">
+                                <a href="https://www.facebook.com/raselsharif0/" target="_blank" class="banner__link">
+                                    <i class="fa-brands fa-square-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="banner__items" data-aos="fade-left"  data-aos-duration="1200">
+                                <a href="https://www.linkedin.com/in/raselsharif/" target="_blank" class="banner__link">
+                                    <i class="fa-brands fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="banner__items" data-aos="fade-left"  data-aos-duration="1600">
+                                <a href="https://github.com/raselsharif" target="_blank" class="banner__link">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    </div>
     <!-- ============ banner section end ============= -->
 
     <!-- ============ about section start ============= -->
@@ -927,6 +930,9 @@
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <!-- ========= aos js ============== -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ========= particle js ===== -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
     <!-- ========= custom js ============== -->
     <script src="js/script.js"></script>
 </body>
