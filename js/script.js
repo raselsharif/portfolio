@@ -1,4 +1,5 @@
-
+// ======= aos js =======
+AOS.init();
 
 // =========== typed js for my title =====
 var typed = new Typed('#myTitle', {
