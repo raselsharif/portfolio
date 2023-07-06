@@ -10,21 +10,24 @@
     #navbar {
         padding: 0;
     }
+
     #about,
     #resume,
     #portfolio,
     #blog,
     #contact {
-        padding-top: 70px  !important;
+        padding-top: 70px !important;
     }
+
     .navbar .navbar-collapse .navbar-nav {
         background-color: #191919;
-        padding: 8px 20px;
+        padding: 15px 20px !important;
         position: relative;
         top: 8px;
         width: 200px;
         z-index: 2;
         text-align: center;
+        box-shadow: 0 0 3px var(--primaryC);
     }
 
     #banner {
@@ -52,7 +55,7 @@
     }
 
     /* ======== about section ======= */
-   
+
     .about__area {
         padding-top: 0 !important;
         margin-left: 0 !important;
@@ -86,9 +89,11 @@
     .about__cv {
         margin-bottom: 20px;
     }
+
     .about__icon {
         margin-left: 84px;
     }
+
     .common__heding__head {
         font-size: 38px;
     }
@@ -113,9 +118,10 @@
     }
 
     /* =======  resume section ======= */
-    #resume{
+    #resume {
         overflow-x: hidden !important;
     }
+
     .resume__area {
         padding: 0 10px;
     }
@@ -146,6 +152,7 @@
     #navbar {
         padding: 0;
     }
+
     #about,
     #resume,
     #portfolio,
@@ -156,12 +163,13 @@
 
     .navbar .navbar-collapse .navbar-nav {
         background-color: #191919;
-        padding: 8px 20px;
+        padding: 15px 20px !important;
         position: relative;
         top: 8px;
         width: 200px;
         z-index: 2;
         text-align: center;
+        box-shadow: 0 0 3px var(--primaryC);
     }
 
     #banner {
@@ -374,5 +382,9 @@
 
     .form__heading {
         margin-top: 35px;
+    }
+
+    .contact__name {
+        margin-bottom: 20px;
     }
 }

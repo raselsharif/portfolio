@@ -19,9 +19,9 @@ var mixer = mixitup(".mixitup", {
 
 $(function () {
   // ============ preloadder ============
-  $(window).on("load", function(){
+  $(window).on("load", function () {
     $(".preloader__main").delay(700).fadeOut(700);
-  }) 
+  })
   // ========== nvbar icon change =========
 
   $(".navbar-toggler-icon").click(function () {
@@ -93,7 +93,6 @@ $(function () {
   })
 
 })
-
 // ========= form validation ======
 let username = document.querySelector(".name");
 let email = document.querySelector(".email");
@@ -152,7 +151,7 @@ function SendEmail() {
     "Subject": subject.value,
     "Message": text.value,
   };
-console.log(bodyValues);
+  console.log(bodyValues);
   // Format the values in the email body
   var body = "";
   for (var key in bodyValues) {
