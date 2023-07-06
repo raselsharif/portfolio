@@ -369,6 +369,11 @@ a {
     font-style: italic;
     cursor: pointer;
     z-index: 100;
+    transition: all linear 0.1s;
+}
+.close__btn:hover, .close__btn:focus{
+    color: red;
+    font-size: 33px;
 }
 
 #about {
@@ -416,7 +421,6 @@ a {
     margin-left: 60px;
     position: relative;
 }
-
 .about__icon:after {
     content: "";
     position: absolute;
