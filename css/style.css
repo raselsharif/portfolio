@@ -371,7 +371,9 @@ a {
     z-index: 100;
     transition: all linear 0.1s;
 }
-.close__btn:hover, .close__btn:focus{
+
+.close__btn:hover,
+.close__btn:focus {
     color: red;
     font-size: 33px;
 }
@@ -421,6 +423,7 @@ a {
     margin-left: 60px;
     position: relative;
 }
+
 .about__icon:after {
     content: "";
     position: absolute;
@@ -797,7 +800,8 @@ a {
 }
 
 .portfolio__img img {
-    height: 100%;
+    width: 100% !important;
+    height: 100% !important;
     object-fit: cover;
 }
 
