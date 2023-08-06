@@ -35,13 +35,42 @@ h6 {
     color: var(--fontHC);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--fontHC);
+}
+
+h1.white,
+h2.white,
+h3.white,
+h4.white,
+h5.white,
+h6.white {
+    color: var(--bg);
+}
+
+
 p {
     color: var(--praColor);
     margin-bottom: 0;
 }
 
+p.white {
+
+    color: var(--bg);
+
+}
+
 a {
     text-decoration: none;
+}
+
+a.white {
+    color: var(--bg);
 }
 
 :root {
@@ -261,6 +290,24 @@ a {
     opacity: 0.8;
 }
 
+.color__switch {}
+
+.color__switch li {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #009e66;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+}
+
+.color__switch li {
+    background: rgb(250, 250, 250);
+}
+
 /* ================ navbar section end ============== */
 #banner {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/svgbg.svg);
@@ -277,6 +324,13 @@ a {
     left: 0;
     width: 100%;
     height: 100vh;
+}
+
+#banner.white {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/svgbgWhite.svg);
+}
+#banner.black {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/svgbg.svg);
 }
 
 #banner .container {
@@ -342,6 +396,13 @@ a {
     z-index: -9999;
     transition: all linear 0.5s;
     padding-top: 100px;
+}
+#about.white,
+#resume.white,
+#portfolio.white,
+#blog.white,
+#contact.white {
+    background: var(--fontHC);
 }
 
 #about.about__top,
@@ -990,3 +1051,43 @@ textarea::placeholder {
 }
 
 /* ============= contact section start ============= */
+/* ========= white theme ======== */
+h1.white,
+h2.white,
+h3.white,
+h4.white,
+h5.white,
+h6.white {
+    color: var(--bg);
+}
+
+p.white {
+
+    color: var(--bg);
+
+}
+
+
+a.white {
+    color: var(--bg);
+}
+/* ========= black theme ======== */
+h1.black,
+h2.black,
+h3.black,
+h4.black,
+h5.black,
+h6.black {
+    color: var(--fontHC);
+}
+
+p.black {
+
+    color: var(--praColor);
+
+}
+
+
+a.black {
+    color: var(--fontHC);
+}
