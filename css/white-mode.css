@@ -1,5 +1,8 @@
 /* ========= white theme ======== */
-.color__switch {}
+.color__switch {
+    position: absolute;
+    top: -100px;
+}
 
 .color__switch li {
     height: 30px;
@@ -46,7 +49,6 @@ a.white {
     color: var(--bg);
     opacity: 0.8;
 }
-
 .about__cv a {
     color: var(--fontHC);
 }
