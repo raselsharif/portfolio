@@ -1051,43 +1051,6 @@ textarea::placeholder {
 }
 
 /* ============= contact section start ============= */
-/* ========= white theme ======== */
-h1.white,
-h2.white,
-h3.white,
-h4.white,
-h5.white,
-h6.white {
-    color: var(--bg);
-}
-
-p.white {
-
-    color: var(--bg);
-
-}
-
-
-a.white {
-    color: var(--bg);
-}
-/* ========= black theme ======== */
-h1.black,
-h2.black,
-h3.black,
-h4.black,
-h5.black,
-h6.black {
-    color: var(--fontHC);
-}
-
-p.black {
-
-    color: var(--praColor);
-
-}
-
-
-a.black {
-    color: var(--fontHC);
+.slick-slider .slick-track, .slick-slider .slick-list {
+    margin: 10px  0;
 }

@@ -1,0 +1,67 @@
+/* ========= white theme ======== */
+h1.white,
+h2.white,
+h3.white,
+h4.white,
+h5.white,
+h6.white {
+    color: var(--bg);
+}
+
+p.white {
+    color: var(--bg);
+}
+
+a.white {
+    color: var(--bg);
+}
+.nav-item .nav-link:hover.white,
+.nav-item .nav-link:focus.white {
+    color: var(--bg);
+    opacity: 0.8;
+}
+.about__cv a {
+    color: var(--fontHC);
+}
+
+.about__card.white,
+.plan__card.white,
+.testi__card.white,
+.resume__card.white,
+.form input.white,
+.form textarea.white {
+    background: var(--fontHC) !important;
+}
+
+.testi__card.white,
+.plan__card.white,
+.resume__card.white {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, .2);
+}
+.resume__items:not(:last-child).white {
+    border-bottom: 1px solid var(--primaryC);
+}
+.form input.white,
+.form textarea.white {
+    border-bottom: 1px solid var(--bg) !important;
+    color: var(--bg) !important;
+}
+
+.slick-dots button.white {
+    background: #9f9f9f;
+}
+
+.slick-active button.white {
+    background: var(--primaryC);
+}
+.close__btn.white {
+    color: var(--bg);
+}
+.close__btn:hover.white,
+.close__btn:focus.white {
+    color: red;
+    font-size: 33px;
+}
+.list__main.white{
+    color: var(--bg) !important;
+}
