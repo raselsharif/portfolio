@@ -290,23 +290,7 @@ a.white {
     opacity: 0.8;
 }
 
-.color__switch {}
 
-.color__switch li {
-    height: 30px;
-    width: 30px;
-    border: 1px solid #009e66;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    cursor: pointer;
-}
-
-.color__switch li {
-    background: rgb(250, 250, 250);
-}
 
 /* ================ navbar section end ============== */
 #banner {

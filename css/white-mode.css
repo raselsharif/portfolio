@@ -1,4 +1,29 @@
 /* ========= white theme ======== */
+.color__switch {}
+
+.color__switch li {
+    height: 30px;
+    width: 30px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    cursor: pointer;
+    background-color: #ffffff;
+    background-image: url(../images/lightbulb-regular.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.color__switch.white li {
+    border: 5px solid var(--bg);
+    background-color: var(--bg);
+    background-image: url(../images/lightbulb-solid.svg);
+}
+
 h1.white,
 h2.white,
 h3.white,
@@ -15,11 +40,13 @@ p.white {
 a.white {
     color: var(--bg);
 }
+
 .nav-item .nav-link:hover.white,
 .nav-item .nav-link:focus.white {
     color: var(--bg);
     opacity: 0.8;
 }
+
 .about__cv a {
     color: var(--fontHC);
 }
@@ -38,9 +65,11 @@ a.white {
 .resume__card.white {
     box-shadow: 0 6px 16px rgba(0, 0, 0, .2);
 }
+
 .resume__items:not(:last-child).white {
     border-bottom: 1px solid var(--primaryC);
 }
+
 .form input.white,
 .form textarea.white {
     border-bottom: 1px solid var(--bg) !important;
@@ -54,14 +83,17 @@ a.white {
 .slick-active button.white {
     background: var(--primaryC);
 }
+
 .close__btn.white {
     color: var(--bg);
 }
+
 .close__btn:hover.white,
 .close__btn:focus.white {
     color: red;
     font-size: 33px;
 }
-.list__main.white{
+
+.list__main.white {
     color: var(--bg) !important;
 }
