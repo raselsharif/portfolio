@@ -11,6 +11,16 @@
         padding: 0;
     }
 
+    .color__switch {
+        position: absolute;
+        top: -50px;
+        right: 7%;
+    }
+
+    .navbar.white .navbar-collapse .navbar-nav {
+        background-color: var(--fontHC);
+    }
+
     #about,
     #resume,
     #portfolio,
@@ -152,7 +162,9 @@
     #navbar {
         padding: 0;
     }
-
+    .navbar.white .navbar-collapse .navbar-nav {
+        background-color: var(--fontHC);
+    }
     #about,
     #resume,
     #portfolio,
