@@ -19,6 +19,7 @@
 
     .navbar.white .navbar-collapse .navbar-nav {
         background-color: var(--fontHC);
+        box-shadow: 0 0 3px var(--bg);
     }
 
     #about,
@@ -164,6 +165,7 @@
     }
     .navbar.white .navbar-collapse .navbar-nav {
         background-color: var(--fontHC);
+        box-shadow: 0 0 3px var(--bg);
     }
     #about,
     #resume,

@@ -50,6 +50,12 @@ a.white {
     color: var(--bg);
     opacity: 0.8;
 }
+.navbar-toggler-icon.white {
+    background-image: url(../images/barsDark.svg);
+}
+.navbar-toggler-icon.navbar_close.white {
+    background-image: url(../images/xmark-solid\ -\ Dark.svg);
+}
 .about__cv a {
     color: var(--fontHC);
 }
