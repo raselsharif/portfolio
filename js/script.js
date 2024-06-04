@@ -1,19 +1,17 @@
-
-
 // =========== typed js for my title =====
-var typed = new Typed('#myTitle', {
-  strings: ['Web Designer', 'Future Web Developer'],
+var typed = new Typed("#myTitle", {
+  strings: ["Responsive Web Designer", "React Developer"],
   typeSpeed: 50,
   loop: true,
 });
 // =========== mixitup js ==========
 var mixer = mixitup(".mixitup", {
   selectors: {
-    target: '.mix'
+    target: ".mix",
   },
   animation: {
-    duration: 300
-  }
+    duration: 300,
+  },
 });
 // ========= section on top ======
 
@@ -21,67 +19,62 @@ $(function () {
   // ============ preloader ============
   $(window).on("load", function () {
     $(".preloader__main").delay(700).fadeOut(700);
-  })
+  });
   // ========== navbar icon change =========
 
   $(".navbar-toggler-icon").click(function () {
     $(this).toggleClass("navbar_close");
-  })
+  });
 
   // ======= hide menubar click on nav link =========
   $(".nav-link").click(function () {
-    $("#navbarNav").removeClass("show")
-    $(".navbar-toggler-icon").removeClass("navbar_close")
-  })
+    $("#navbarNav").removeClass("show");
+    $(".navbar-toggler-icon").removeClass("navbar_close");
+  });
   // ========== section close =========
   $(".about__links").click(function () {
-    $("#about").addClass("about__top")
-  })
+    $("#about").addClass("about__top");
+  });
   $(".about__close").click(function () {
-    $("#about").removeClass("about__top")
-  })
+    $("#about").removeClass("about__top");
+  });
   // ===================================
   $(".resume__links").click(function () {
-    $("#resume").addClass("resume__top")
-  })
+    $("#resume").addClass("resume__top");
+  });
   $(".resume__close").click(function () {
-    $("#resume").removeClass("resume__top")
-  })
+    $("#resume").removeClass("resume__top");
+  });
   // ===================================
 
   $(".portfolio__links").click(function () {
-    $("#portfolio").addClass("portfolio__top")
-  })
+    $("#portfolio").addClass("portfolio__top");
+  });
   $(".portfolio__close").click(function () {
-    $("#portfolio").removeClass("portfolio__top")
-  })
+    $("#portfolio").removeClass("portfolio__top");
+  });
   // ===================================
 
   $(".blog__links").click(function () {
-
-    $("#blog").addClass("blog__top")
-  })
+    $("#blog").addClass("blog__top");
+  });
   $(".blog__close").click(function () {
-
-    $("#blog").removeClass("blog__top")
-  })
+    $("#blog").removeClass("blog__top");
+  });
   // ===================================
 
   $(".contact__links").click(function () {
-
-    $("#contact").addClass("contact__top")
-  })
+    $("#contact").addClass("contact__top");
+  });
   $(".contact__close").click(function () {
-
-    $("#contact").removeClass("contact__top")
-  })
+    $("#contact").removeClass("contact__top");
+  });
 
   // ========== portfolio active menu ========
   $(".list__btn").click(function () {
     $(this).addClass("btn__active").siblings().removeClass("btn__active");
-  })
-
-})
+  });
+});
 // ========= form validation ======
 let username = document.querySelector(".name");
 let email = document.querySelector(".email");
@@ -89,15 +82,13 @@ let subject = document.querySelector(".subject");
 let text = document.querySelector(".text");
 let btn = document.querySelector(".form__btn");
 let msg = document.querySelector(".error__msg");
-let mail_valid = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+let mail_valid =
+  /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 let nameerr = document.querySelector(".name__err");
 let mailerr = document.querySelector(".mail__err");
 let suberr = document.querySelector(".sub__err");
 let texterr = document.querySelector(".text__err");
-
-
-
 
 function SendEmail() {
   if (username.value === "") {
@@ -116,7 +107,6 @@ function SendEmail() {
       mailerr.innerHTML = "";
     } else {
       mailerr.innerHTML = "Your email is not valid";
-
     }
   }
 
@@ -135,10 +125,10 @@ function SendEmail() {
   }
   // Create an object to store the values
   var bodyValues = {
-    "Name": username.value,
-    "Email": email.value,
-    "Subject": subject.value,
-    "Message": text.value,
+    Name: username.value,
+    Email: email.value,
+    Subject: subject.value,
+    Message: text.value,
   };
   console.log(bodyValues);
   // Format the values in the email body
@@ -149,7 +139,12 @@ function SendEmail() {
     }
   }
   // Check if all fields are valid before sending the email
-  if (nameerr.innerHTML === "" && mailerr.innerHTML === "" && suberr.innerHTML === "" && texterr.innerHTML === "") {
+  if (
+    nameerr.innerHTML === "" &&
+    mailerr.innerHTML === "" &&
+    suberr.innerHTML === "" &&
+    texterr.innerHTML === ""
+  ) {
     // Configure SMTPJS with your SMTP service provider credentials
     Email.send({
       SecureToken: "4e8111f5-eaf4-4d98-aeb7-392791102ad2", // Replace with your SMTPJS token
@@ -174,15 +169,14 @@ function SendEmail() {
 
 // SecureToken: "4e8111f5-eaf4-4d98-aeb7-392791102ad2"
 
-
 // ============= slick slider ==========
-$('.slick__slider').slick({
+$(".slick__slider").slick({
   infinite: true,
   slidesToShow: 2,
   slidesToScroll: 1,
   dots: true,
   arrows: false,
-  appendDots: $('.testi__dots'),
+  appendDots: $(".testi__dots"),
   centerMode: true,
   autoplay: false,
   responsive: [
@@ -192,16 +186,12 @@ $('.slick__slider').slick({
         slidesToShow: 1,
         autoplay: true,
         autoplaySpeed: 2500,
-      }
-    }
-  ]
+      },
+    },
+  ],
 });
 
 // ========= venobox youtube video =======
 new VenoBox({
-  selector: '.my-video-links',
+  selector: ".my-video-links",
 });
-
-
-
-
